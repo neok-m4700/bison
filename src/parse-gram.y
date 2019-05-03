@@ -123,6 +123,7 @@
 %define api.pure full
 %define api.value.type union
 %define locations
+%define parse.assert
 %define parse.error verbose
  //%define parse.lac full
 %define parse.trace

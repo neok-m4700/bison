@@ -1731,8 +1731,7 @@ yyreduce:
       {
         yystate = *yyssp;
         const int yyi = yypact[yystate] + yylhs;
-        if (yyi < 0 || YYLAST < yyi || yycheck[yyi] != yylhs)
-          goto yydefault;
+        YY_ASSERT (0 <= yyi && yyi <= YYLAST && yycheck[yyi] == yylhs);
         yystate = yytable[yyi];
       }
     else
